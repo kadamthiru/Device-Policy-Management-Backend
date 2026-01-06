@@ -1,0 +1,12 @@
+.venv/
+.python-version
+DS_Store
+.vscode/
+.env
+.idea/
+*.sqlite3
+db.sqlite3
+__pycache__/
+media/
+*.pyc
+*migrations/
