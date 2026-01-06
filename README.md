@@ -19,6 +19,12 @@ Common challenges include:
 This project addresses these problems at the backend level.
 
 ---
+## Key Challenges & Learnings
+
+- Prevented race conditions where concurrent admin actions (e.g., version creation or rollback) could result in multiple active policy versions by enforcing row-level locking and transactional updates.
+- Ensured devices never applied stale configurations by always resolving the current policy version inside a database transaction before assignment.
+
+---
 
 ## Core Design Principles
 
